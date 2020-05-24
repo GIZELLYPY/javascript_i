@@ -5,7 +5,17 @@
 	<meta charset="utf-8">
 	<script type="text/javascript" src="//C:/Users/gizelly/Documents/DIO - Bootcamp/javascript_i/javascript_i/js/main.js"></script>
 </head>
-<body>
+<body onload="carregamento()">
 	<h1>Eu sou ótima com Javascript</h1>
+	<button type="button" onclick="clicou()">Clique aqui gentilmente</button>
+	<p id="mensagem" onclick="redirecionar()"> </p>
+	<p id="mouse" onmouseover="porCima(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+	<p id="cadeira" onmouseover="porCima(this)" onmouseout="voltar(this)">Cadeiras custam caro!</p>
+	<select onchange="optionList(this)">
+		<option value="1">Leite</option>
+		<option value="2">Caneta</option>
+		<option value="3">Espelho</option>
+	</select>
+
 </body>
 </html>

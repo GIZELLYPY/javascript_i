@@ -93,3 +93,109 @@ console.log(data.getDay())
 console.log(data.getHours())
 console.log(data.getMinutes())
 
+//////FUNÇÕES///////////////////////////////////////////////////////////
+function suma( number1, number2 ) {
+	return number1 + number2;
+  }
+
+var x = suma(10,20);
+
+alert(x);
+
+
+
+////////////
+
+
+function nameReplace( frase , nome1, novo_nome) {
+	return frase.replace(nome1, novo_nome)
+}
+
+var nomeTrocado = nameReplace("Eu gosto de morango","morango","cactos!!!")
+
+alert(nomeTrocado)
+
+
+//////////////
+
+
+function validadorIdade( idade ) {
+	var validar;
+	if (idade == 18){
+		validar = true
+
+	}else{
+		validar = false
+	}
+	return validar;
+}
+
+
+var idade = prompt("Digite sua idade");
+
+console.log(validadorIdade(idade));
+
+////////////////////////////////////////////////////////
+
+function carregamento(){
+	alert("Página carregada")
+}
+
+
+////////////////
+
+function clicou(){
+	document.getElementById("mensagem").innerHTML = "<b>Obrigado por clicar !!!!</b>";
+	//alert("Obrigado por clicar em mim!!! ")
+}
+
+
+function redirecionar(){
+	
+	// para abrir em nova aba
+	window.open("https://www.w3schools.com/jsref/prop_html_innerhtml.asp")
+
+	// para abrir na mesma aba
+	//window.location.href = "https://www.w3schools.com/jsref/prop_html_innerhtml.asp"
+}
+
+
+function porCima(){
+	document.getElementById("mouse").innerHTML = "<b>Compre um Lexus</b>"
+	//return alert("Você passou o mouse por cima!!!"
+
+}
+
+
+
+function voltar(){
+	document.getElementById("mouse").innerHTML = "<b>Obrigado por clicar !!!!</b>"
+	//return alert("Você passou o mouse por cima!!!"
+
+}
+
+
+/// function generica para iteragir com o mouse sem ficar mandando
+// diferentes ids
+
+
+function porCima(elemento){
+	elemento.innerHTML = "<b>Compre um Lexus</b>"
+	//return alert("Você passou o mouse por cima!!!"
+
+}
+
+
+
+function voltar(elemento){
+	elemento.innerHTML = "<b>Obrigado por clicar !!!!</b>"
+	//return alert("Você passou o mouse por cima!!!"
+
+}
+
+
+
+function optionList(elemento){
+	return alert(elemento.value)
+
+}
