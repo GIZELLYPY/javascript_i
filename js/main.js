@@ -1,5 +1,5 @@
 // VARIAVEIS ////////////////////////////////////////////////////////////////
-var nome = "Gizélly Natal Nakano";
+var nome = "Gizélly Natal";
 var idade = 32;
 var numebe = 100;
 
